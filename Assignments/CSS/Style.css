@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a0bcf4;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: disc;
+    padding: 20px 40px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+aside {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pix {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #a0bcf4;
+}
+
+footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+}
