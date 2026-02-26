@@ -1,81 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    margin: 0px 10%;
+    font-family: sans-serif;
     background-image: url("../Images/y-so-serious-white.png"); 
 }
 
+.container {
+    background-color: white;
+}
+
 header {
-    background-color: #a0bcf4;
+    background-color: #9abcf8;
     color: white;
-    padding: 45px 30px;
+    padding: 2rem;
 }
 
-header h1 {
+h1 {
+    font-size: 2rem;
     margin: 0;
-    font-size: 34px;
-    font-weight: bold;
-}
-
-nav {
-    margin-top: 25px;
-    margin-bottom: 0;
 }
 
 nav ul {
-    list-style-type: disc;
-    padding-left: 45px;
-    margin-bottom: 0;
+    padding: 1rem 2rem;
 }
 
-nav li {
-    font-size: 16px;
-    margin-bottom: 3px;
+.content-area {
+    padding: 2rem;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
-section h2 {
-    margin-top: 15px; 
-    font-size: 26px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-section h3 {
-    font-size: 19px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-section p {
+h2 {
+    font-size: 1.5rem;
     margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 16px;
 }
 
-aside {
-    display: block;
-    margin-top: 35px;
+h3 { 
+    font-size: 1.25rem;
 }
 
-.profile-pix {
-    width: 175px;
-    height: 175px;
+.profile-wrapper {
+    margin-top: 20px;
+}
+
+.circle { 
+    border-radius: 50%; 
+    border: 5px solid #9abcf8;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 7px solid #a0bcf4;
 }
 
 footer {
-    margin-top: 50px;
-    padding: 25px 30px;
-    border-top: 1px solid #eee;
-    font-size: 14px;
+    padding: 1rem 2rem;
+    border-top: 1px solid #eeeeee;
 }
