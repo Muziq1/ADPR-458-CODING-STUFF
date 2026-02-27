@@ -1,54 +1,31 @@
-body {
-    margin: 0px 10%;
-    font-family: sans-serif;
-    background-image: url("../Images/y-so-serious-white.png"); 
-}
-
 .container {
-    background-color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-header {
-    background-color: #9abcf8;
-    color: white;
-    padding: 2rem;
-}
-
-h1 {
-    font-size: 2rem;
-    margin: 0;
+header, nav, footer {
+  grid-column: span 12;
 }
 
 nav ul {
-    padding: 1rem 2rem;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
 }
 
-.content-area {
-    padding: 2rem;
-}
+.col-span-12 { grid-column: span 12; }
+.col-span-8  { grid-column: span 8; }
+.col-span-6  { grid-column: span 6; }
+.col-span-4  { grid-column: span 4; }
 
-h2 {
-    font-size: 1.5rem;
-    margin-top: 0;
-}
-
-h3 { 
-    font-size: 1.25rem;
-}
-
-.profile-wrapper {
-    margin-top: 20px;
-}
-
-.circle { 
-    border-radius: 50%; 
-    border: 5px solid #9abcf8;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-footer {
-    padding: 1rem 2rem;
-    border-top: 1px solid #eeeeee;
+.circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
 }
