@@ -14,7 +14,46 @@ header {
   border-radius: 4px;
 }
 
+nav, footer {.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  grid-column: span 12;
+  background-color: #99BBEE;
+  padding: 20px;
+  color: white;
+  border-radius: 4px;
+}
+
 nav, footer {
+  grid-column: span 12;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.col-span-12 { grid-column: span 12; }
+.col-span-8  { grid-column: span 8; }
+.col-span-6  { grid-column: span 6; }
+.col-span-4  { grid-column: span 4; }
+
+.circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #99BBEE;
+}
   grid-column: span 12;
 }
 
