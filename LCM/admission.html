@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Admission — Lincoln Children's Museum</title>
+  <link rel="stylesheet" href="css/admission.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="adm-header">
+    <div class="adm-header__top">
+      <a class="adm-header__logo" href="index.html">
+        <img src="images/Lincoln-Children's-Museum-logo-white-338x100.png" alt="Lincoln Children's Museum">
+      </a>
+      <nav class="adm-header__auth">
+        <a href="#">REGISTER</a>
+        <a href="#">SIGN IN</a>
+      </nav>
+    </div>
+    <a class="adm-header__return" href="index.html">
+      <i class="fa fa-home"></i> Return to Home Page
+    </a>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="adm-main">
+    <h1>Daily Admission</h1>
+
+    <p class="adm-tagline">We're so excited to have you come play, so much is new you'll want to stay all day!</p>
+
+    <p class="adm-intro">
+      And you're in just the right place to get the party started...online ticket purchases are encouraged
+      to ensure we can get you checked in and having fun as quickly as possible upon your arrival to the museum.
+      Before you purchase there are few things we'd like you to know:
+    </p>
+
+    <ul class="adm-policy">
+      <li>All tickets are <strong>non-refundable and non-transferrable</strong> however tickets can be used on any date/time the Museum is open to the public.</li>
+      <li><strong>Weapons Policy</strong>: The Lincoln Children's Museum prohibits firearms, knives, or weapons of any kind.</li>
+      <li>For the safety and security of all guests, all adults aged 16 or older may not enter the museum unless accompanied by an infant or by a child aged 12 years or younger. All infants and children must be accompanied by an adult for the entirety of the museum visit. If visiting the museum as a larger group, we require that a 1:5 adult to child/infant ratio is met for the visit.</li>
+    </ul>
+
+    <table class="adm-table">
+      <tbody>
+        <tr>
+          <td>Caretaker</td>
+          <td><input class="qty-input" type="number" min="0" placeholder="Quantity"></td>
+          <td>$13.95</td>
+        </tr>
+        <tr>
+          <td>Youth (19 mo–15 yrs)</td>
+          <td><input class="qty-input" type="number" min="0" placeholder="Quantity"></td>
+          <td>$16.95</td>
+        </tr>
+        <tr>
+          <td>Senior (Age 65+)</td>
+          <td><input class="qty-input" type="number" min="0" placeholder="Quantity"></td>
+          <td>$12.95</td>
+        </tr>
+        <tr>
+          <td>Infant (0–18 months)</td>
+          <td><input class="qty-input" type="number" min="0" placeholder="Quantity"></td>
+          <td>$0.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="adm-cart-btn">Add to Cart</button>
+  </main>
+
+</body>
+</html>

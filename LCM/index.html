@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover the Power of Play at the Lincoln Children's Museum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <div class="top-bar__social">
+      <a href="#" aria-label="Facebook">
+        <img src="images/facebook-black-48.png" alt="Facebook">
+      </a>
+      <a href="#" aria-label="Instagram">
+        <img src="images/instagram-black-48.png" alt="Instagram">
+      </a>
+      <a href="#" aria-label="Yelp">
+        <img src="images/yelp-black-48.png" alt="Yelp">
+      </a>
+      <a href="#" aria-label="TripAdvisor">
+        <img src="images/TripAdvisor-logo-48x48.png" alt="TripAdvisor">
+      </a>
+    </div>
+    <div class="top-bar__right">
+      <a href="#" class="donate-btn">
+        <i class="fa fa-heart"></i> Donate
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#" class="site-header__logo">
+        <img src="images/Lincoln-Children's-Museum-logo-338x100.png" alt="Lincoln Children's Museum">
+      </a>
+      <button class="hamburger" aria-label="Open menu">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO (Image) ===== -->
+  <section class="hero">
+    <div class="hero__image-wrap">
+      <img src="images/hero-screenshot.png" alt="Lincoln Children's Museum">
+    </div>
+  </section>
+
+  <!-- ===== FLOATING QUICK LINKS (right edge) ===== -->
+  <div class="quick-links">
+    <a href="#" class="quick-link quick-link--orange" title="Location">
+      <img src="images/pin-8-512.png" alt="Location">
+    </a>
+    <a href="#" class="quick-link quick-link--gold" title="Upcoming Events">
+      <img src="images/today-512.png" alt="Events">
+    </a>
+    <a href="#" class="quick-link quick-link--teal" title="Donate">
+      <img src="images/heart-69-512.png" alt="Donate">
+    </a>
+    <a href="admission.html" class="quick-link quick-link--navy" title="Buy Tickets">
+      <img src="images/ticket-512.png" alt="Buy Tickets">
+    </a>
+  </div>
+
+  <!-- ===== WHAT'S HAPPENING ===== -->
+  <section class="happening">
+    <div class="happening__inner">
+      <div class="happening__heading">
+        <span class="happening__stars">&#127775; &#10022;</span>
+        <h2><a href="#">check out what's happening at LCM</a></h2>
+      </div>
+      <p class="happening__sub">
+        Plan for more events and even more FUN by visiting our
+        <a href="#"><strong>event calendar</strong></a>!
+      </p>
+
+      <!-- Static exhibit image -->
+      <div class="slideshow">
+        <div class="slideshow__track">
+          <div class="slide active">
+            <div class="slide__img">
+              <img src="images/LNKLAB-.png" alt="LNKLab Exhibit">
+            </div>
+            <div class="slide__caption">
+              <p>Our newest exhibit, LNKLab, designed for 8–12 year olds is now open! Come check it out.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT — Orange Two-Image ===== -->
+  <section class="impact">
+    <div class="impact__inner">
+      <div class="impact__img-wrap">
+        <img src="images/tinker_theatre_660x495.png" alt="Kids at Tinker Theatre">
+      </div>
+      <div class="impact__img-wrap">
+        <img src="images/boysinplane_660x495.png" alt="Kids in Plane Exhibit">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CARDS (Carousel) ===== -->
+  <section class="featured">
+    <div class="featured__wrapper" id="featured-wrapper">
+
+      <div class="featured__card featured__card--active">
+        <div class="featured__card-text">
+          <h3>birthday parties</h3>
+          <p>Best. Birthday. Ever. Did we mention Museum Members receive 10% off? Plus, we're now offering weeknight options.</p>
+          <a href="#" class="btn-look">take a look</a>
+        </div>
+        <div class="featured__card-img">
+          <img src="images/bday_2025_900x700.png" alt="Birthday parties at LCM">
+        </div>
+      </div>
+
+      <div class="featured__card">
+        <div class="featured__card-text">
+          <h3>wednesday mornings at the museum</h3>
+          <p>Join us each Wednesday for free early entry from 8–9am (and stay for all day play) and enjoy a free coffee bar while the kids explore. We'd love to see you!</p>
+        </div>
+        <div class="featured__card-img">
+          <img src="images/WednesdayMornings.png" alt="Wednesday Mornings at the Museum">
+        </div>
+      </div>
+
+      <div class="featured__card">
+        <div class="featured__card-text">
+          <h3>sensory hours</h3>
+          <p>Our Sensory Hours, offered every Wednesday and Thursday from 3–5 p.m., provide a calmer, more supportive environment for children with sensory sensitivities.</p>
+          <a href="#" class="btn-look">learn more</a>
+        </div>
+        <div class="featured__card-img">
+          <img src="images/KultureCity.png" alt="KultureCity Sensory Certified">
+        </div>
+      </div>
+
+    </div>
+
+    <button class="featured__arrow featured__arrow--prev" onclick="changeCard(-1)">&#8249;</button>
+    <button class="featured__arrow featured__arrow--next" onclick="changeCard(1)">&#8250;</button>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="partners">
+    <div class="partners__inner">
+      <h3>We are <span>proud to partner</span> with these local organizations:</h3>
+      <p>Thank you to all of our current partners!</p>
+
+      <div class="partners__grid">
+        <div class="partner-logo"><img src="images/RogersFnd-logo.png" alt="Rogers Foundation"></div>
+        <div class="partner-logo"><img src="images/Johnny-Carson-Foundation-Logo.jpg" alt="Johnny Carson Foundation"></div>
+        <div class="partner-logo"><img src="images/Hawks-Foundation-Logo.webp" alt="The Hawks Foundation"></div>
+        <div class="partner-logo"><img src="images/HomeServicesLogo.jpg" alt="HomeServices of Nebraska"></div>
+        <div class="partner-logo"><img src="images/HomeRealEstate_Logo.png" alt="Home Real Estate"></div>
+        <div class="partner-logo"><img src="images/WoodsBrosRealtylogo.png" alt="Woods Bros Realty"></div>
+        <div class="partner-logo"><img src="images/Giving3_logo.jpg" alt="The Giving3 Foundation"></div>
+        <div class="partner-logo"><img src="images/molex_logo.png" alt="Molex"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== MEMBERSHIP ===== -->
+  <section class="membership">
+    <div class="membership__inner">
+      <div class="membership__photo">
+        <img src="images/Untitled design.png" alt="Kids in superhero costumes">
+      </div>
+      <div class="membership__box">
+        <h2>Enjoy super-hero-sized benefits by becoming a member</h2>
+        <p>A membership to the Lincoln Children's Museum is a cost-effective way to get awesome perks while supporting the museum!</p>
+        <p>Our selection of memberships open the door to days of family fun and memories. Memberships are a great gift that gives all year long.</p>
+        <div class="membership__btns">
+          <a href="#" class="mem-btn">
+            Become a Member <img src="images/ticket-512.png" alt="">
+          </a>
+          <a href="#" class="mem-btn">
+            Renew Your Membership <img src="images/star-7-512-2.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <img
+        src="images/Lincoln-Children's-Museum-logo-white-338x100.png"
+        alt="Lincoln Children's Museum"
+        class="footer__logo"
+      >
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
