@@ -1,0 +1,181 @@
+/* ============================================================
+   ADMISSION PAGE — css/admission.css
+============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+/* ── Header ── */
+.adm-header {
+  background-color: #00a99d;
+  padding: 1rem 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.adm-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.adm-header__logo img {
+  height: 80px;
+  width: auto;
+}
+
+.adm-header__auth {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.adm-header__auth a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.adm-header__auth a:hover { text-decoration: underline; }
+
+.adm-header__return {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.adm-header__return:hover { text-decoration: underline; }
+
+.adm-header__return i { font-size: 1rem; }
+
+/* ── Main content ── */
+.adm-main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 2rem 4rem;
+}
+
+.adm-main h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.adm-tagline {
+  color: #6a0dad;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.adm-intro {
+  font-size: 0.95rem;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.adm-policy {
+  font-size: 0.95rem;
+  color: #222;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.adm-policy li { margin-bottom: 0.3rem; }
+
+/* ── Ticket table ── */
+.adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.8rem;
+}
+
+.adm-table tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.adm-table tr:first-child {
+  border-top: 1px solid #d0d0d0;
+}
+
+.adm-table td {
+  padding: 0.75rem 0.5rem;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.adm-table td:first-child {
+  width: 40%;
+  color: #222;
+}
+
+.adm-table td:nth-child(2) {
+  width: 45%;
+}
+
+.adm-table td:last-child {
+  width: 15%;
+  text-align: right;
+  color: #222;
+  font-weight: 500;
+}
+
+.qty-input {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ── Add to Cart button ── */
+.adm-cart-btn {
+  display: inline-block;
+  background-color: #00a99d;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.adm-cart-btn:hover { background-color: #008c82; }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .adm-main h1 { font-size: 1.8rem; }
+  .adm-header__auth { position: static; transform: none; justify-content: flex-end; display: flex; margin-bottom: 0.5rem; }
+  .adm-header__top { flex-direction: column; }
+  .adm-table td:first-child { width: auto; }
+}

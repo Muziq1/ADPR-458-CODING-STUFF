@@ -1,0 +1,685 @@
+/* ============================================================
+   LCM – Lincoln Children's Museum  |  style.css
+   Colors:
+     Dark Teal   #0d6373
+     Teal        #00a99d
+     Orange      #f47920
+     Gold        #f5c518
+     Light Teal  #9dd1ce
+     Yellow      #f5e27a
+     Cream-White #ffffff
+============================================================ */
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+img { display: block; max-width: 100%; }
+a   { text-decoration: none; color: inherit; }
+
+
+/* ============================================================
+   TOP BAR
+============================================================ */
+.top-bar {
+  background-color: #0d6373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1.5rem;
+}
+
+.top-bar__social {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.top-bar__social img {
+  height: 20px;
+  width: auto;
+  filter: brightness(0) invert(1);   /* make icons white */
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.top-bar__social a:hover img { opacity: 1; }
+
+.donate-btn {
+  background-color: #f5c518;
+  color: #333;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s;
+}
+
+.donate-btn i { color: #c00; }
+.donate-btn:hover { background-color: #e0b010; }
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+.site-header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.site-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.55rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__logo img {
+  height: 56px;
+  width: auto;
+}
+
+.hamburger {
+  background: #f5c518;
+  border: none;
+  color: #0d4a57;
+  font-size: 1.25rem;
+  width: 42px;
+  height: 38px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.hamburger:hover { background-color: #d9a800; }
+
+
+/* ============================================================
+   HERO — YouTube Video
+============================================================ */
+.hero {
+  width: 100%;
+  background: #000;
+  position: relative;
+}
+
+.hero__image-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero__image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ============================================================
+   FLOATING QUICK LINKS (right edge, below hero)
+============================================================ */
+.quick-links {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 300;
+}
+
+.quick-link {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.quick-link:hover { opacity: 0.85; }
+
+.quick-link img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.quick-link--orange { background-color: #f47920; }
+.quick-link--gold   { background-color: #f5c518; }
+.quick-link--teal   { background-color: #0d6373; }
+.quick-link--navy   { background-color: #2a4a6a; }
+
+
+/* ============================================================
+   WHAT'S HAPPENING + SLIDESHOW
+============================================================ */
+.happening {
+  background: #fff;
+  padding: 2rem 1.5rem 2.5rem;
+}
+
+.happening__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.happening__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.happening__stars {
+  font-size: 1.2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.happening__heading h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #222;
+  line-height: 1.2;
+}
+
+.happening__heading h2 a {
+  color: #222;
+}
+
+.happening__heading h2 a:hover {
+  color: #0d6373;
+}
+
+.happening__sub {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.happening__sub a {
+  color: #00a99d;
+  font-weight: 700;
+}
+
+/* -- Slideshow -- */
+.slideshow {
+  position: relative;
+  border: 3px solid #2a4a6a;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #1e3a52;
+}
+
+.slideshow__nav {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: flex;
+  gap: 3px;
+  z-index: 10;
+}
+
+.sld-btn {
+  background: rgba(100,100,100,0.75);
+  color: #fff;
+  border: none;
+  width: 28px;
+  height: 26px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.sld-btn:hover { background: #0d6373; }
+
+.slideshow__track {
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Image fills full width */
+.slide__img {
+  width: 100%;
+  background: #1e3a52;
+}
+
+.slide__img img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  object-position: left top;
+}
+
+/* Caption overlaid bottom-right on top of the image */
+.slide__caption {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  width: 36%;
+  background: #fff;
+  padding: 1.2rem 1.4rem;
+}
+
+.slide__caption p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   IMPACT — Orange Two-Image Section
+============================================================ */
+.impact {
+  background-color: #f47920;
+  padding: 0.85rem;
+}
+
+.impact__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.impact__img-wrap img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+}
+
+
+/* ============================================================
+   FEATURED CARDS — Carousel
+============================================================ */
+.featured {
+  background-color: #9dd1ce;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  min-height: 380px;
+}
+
+.featured__wrapper {
+  position: relative;
+}
+
+.featured__card {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 380px;
+}
+
+.featured__card--active {
+  display: grid;
+}
+
+.featured__card-text {
+  padding: 3rem 3rem 3rem 4rem;
+}
+
+.featured__card-text h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #1a3a4a;
+  margin-bottom: 0.9rem;
+  text-transform: lowercase;
+}
+
+.featured__card-text p {
+  font-size: 0.95rem;
+  color: #1a3a4a;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.btn-look {
+  display: inline-block;
+  background: #0d6373;
+  color: #fff;
+  padding: 0.45rem 1.3rem;
+  border-radius: 3px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-look:hover { background: #00a99d; }
+
+.featured__card-img {
+  overflow: hidden;
+  height: 380px;
+}
+
+.featured__card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.featured__card-img img:hover { transform: scale(1.03); }
+
+/* Carousel Arrow Buttons */
+.featured__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0d6373;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.featured__arrow:hover { background: #00a99d; }
+
+.featured__arrow--prev { left: 0.5rem; }
+.featured__arrow--next { right: 0.5rem; }
+
+
+/* ============================================================
+   PARTNERS
+============================================================ */
+.partners {
+  background: #fff;
+  padding: 3rem 1.5rem 2.5rem;
+  border-top: 4px solid #f0f0f0;
+}
+
+.partners__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partners h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.partners h3 span {
+  color: #f47920;
+}
+
+.partners > .partners__inner > p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.partners__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.partner-logo {
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.75rem;
+  min-height: 90px;
+}
+
+.partner-logo img {
+  max-height: 65px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(15%);
+  transition: filter 0.2s;
+}
+
+.partner-logo img:hover { filter: none; }
+
+/* Pagination */
+.partners__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.pg-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pg-btn:hover,
+.pg-active {
+  background: #0d6373;
+  color: #fff;
+  border-color: #0d6373;
+}
+
+
+/* ============================================================
+   MEMBERSHIP
+============================================================ */
+.membership {
+  background-color: #f5e27a;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.membership__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membership__photo {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: -2px;
+}
+
+.membership__photo img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px 6px 0 0;
+}
+
+.membership__box {
+  background: #0d6373;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 2rem 2rem;
+  width: 100%;
+  max-width: 620px;
+  border-radius: 0 0 6px 6px;
+}
+
+.membership__box h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.membership__box p {
+  font-size: 0.92rem;
+  color: #c8eae7;
+  margin-bottom: 0.65rem;
+  line-height: 1.55;
+}
+
+.membership__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.mem-btn {
+  background: #1a3a4a;
+  color: #fff;
+  padding: 0.55rem 1.5rem;
+  border-radius: 3px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 240px;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.mem-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  display: inline;
+}
+
+.mem-btn:hover { background: #00a99d; }
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.site-footer {
+  background-color: #0d4a57;
+  padding: 2.5rem 1.5rem 2rem;
+  min-height: 140px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer__logo {
+  height: 52px;
+  width: auto;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 900px) {
+  .hero__image-wrap img { width: 100%; }
+
+  .impact__inner {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .impact__img-wrap img { height: 260px; }
+
+  .featured__card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured__card-text { padding: 2rem 1.5rem; }
+
+  .featured__card-img {
+    height: 280px;
+  }
+
+  .partners__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .top-bar { padding: 0.4rem 0.75rem; }
+
+  .site-header__inner { padding: 0.5rem 0.75rem; }
+
+  .site-header__logo img { height: 44px; }
+
+  .happening { padding: 1.75rem 1rem 2rem; }
+
+  .happening__heading h2 { font-size: 1.25rem; }
+
+  .slide { flex-direction: column; }
+  .slide__img { width: 100%; }
+  .slide__img img { height: 200px; }
+
+  .partners__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .membership__box { padding: 1.75rem 1.25rem 1.5rem; }
+  .membership__box h2 { font-size: 1.1rem; }
+
+  .featured__card-text { padding: 1.5rem 1rem; }
+  .featured__card-text h3 { font-size: 1.4rem; }
+}
