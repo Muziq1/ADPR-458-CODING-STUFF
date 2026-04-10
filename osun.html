@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amplifying Investigative Voices — The Osun River</title>
+  <link rel="stylesheet" href="CSS/osun.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <div class="nav-mark">
+        <svg viewBox="0 0 14 14" fill="none">
+          <circle cx="7" cy="7" r="5.5" stroke="white" stroke-width="1"/>
+          <path d="M4 7c0-1.7 1.3-3 3-3" stroke="white" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="nav-wordmark">
+        Amplifying Investigative Voices
+        <span>The Osun River Documentary</span>
+      </div>
+    </div>
+
+    <ul class="nav-tabs">
+      <li><a href="#hero" class="active">Sacred waters</a></li>
+      <li><a href="#acts">Science</a></li>
+      <li><a href="#acts">Media lens</a></li>
+      <li><a href="#acts">Power</a></li>
+    </ul>
+
+    <a href="#watch" class="nav-cta">Watch film</a>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+
+    <div class="hero-bg">
+      <img src="Images/osun-river.jpg" alt="The Osun River — sacred grove and polluted water">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-meta">
+      <div class="meta-pill">
+        <strong>30</strong>
+        <span>minutes</span>
+      </div>
+      <div class="meta-pill">
+        <strong>UNESCO</strong>
+        <span>Heritage site</span>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badges">
+        <span class="badge badge-doc">Documentary · 2026</span>
+        <span class="badge badge-un">UNESCO World Heritage</span>
+        <span class="badge badge-rt">Osun State, Nigeria</span>
+      </div>
+
+      <p class="hero-eyebrow">A UNL Hitchcock Fellowship Production</p>
+
+      <h1 class="hero-title">
+        Amplifying<br><em>Investigative Voices</em>
+      </h1>
+
+      <p class="hero-subtitle">The Osun River: A Case Study in Environmental Journalism</p>
+
+      <p class="hero-question">
+        For a decade, journalists investigated the pollution of Nigeria's sacred Osun River.
+        <strong>Did their coverage help the communities who needed it most — or did it fail them?</strong>
+      </p>
+
+      <div class="hero-actions">
+        <a href="#watch" class="btn-watch">&#9654; Watch the film</a>
+        <a href="#acts" class="btn-explore">Explore by act</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat-cell">
+      <p class="stat-num">267 km</p>
+      <p class="stat-label">River length through Yorubaland</p>
+    </div>
+    <div class="stat-cell">
+      <p class="stat-num">2M+</p>
+      <p class="stat-label">People across 20 communities</p>
+    </div>
+    <div class="stat-cell">
+      <p class="stat-num">2005</p>
+      <p class="stat-label">UNESCO designation year</p>
+    </div>
+    <div class="stat-cell">
+      <p class="stat-num">10 yrs</p>
+      <p class="stat-label">Of media coverage examined</p>
+    </div>
+  </div>
+
+
+  <!-- THE QUESTION -->
+  <section class="question-section">
+    <div class="question-rule"></div>
+    <p class="question-text">
+      "This is the story of what happened when the world's cameras turned toward the Osun River —
+      <em>told by those who lived it.</em>"
+    </p>
+    <p class="question-attr">— Babatunde Okunlola, director &amp; narrator</p>
+  </section>
+
+
+  <!-- ACTS -->
+  <section class="acts-section" id="acts">
+
+    <div class="acts-intro">
+      <p class="section-eyebrow">The film</p>
+      <h2 class="section-title">Four acts.<br>One river's story.</h2>
+      <p class="section-sub">The documentary unfolds across four chapters — from the sacred to the scientific, from media failure to political accountability.</p>
+    </div>
+
+    <div class="acts-grid">
+
+      <div class="act-card active" onclick="activateAct(this)">
+        <p class="act-number">Act 1</p>
+        <h3 class="act-title">Sacred waters, toxic reality</h3>
+        <p class="act-desc">The spiritual significance of the Osun River to Yoruba people worldwide — and how illegal gold mining began poisoning it with mercury, lead, and cyanide from 2015.</p>
+        <div class="act-voices">
+          <span class="voice-chip">Yeye Osun</span>
+          <span class="voice-chip">Chief Elebuibon</span>
+          <span class="voice-chip">Arugba</span>
+        </div>
+      </div>
+
+      <div class="act-card" onclick="activateAct(this)">
+        <p class="act-number">Act 2</p>
+        <h3 class="act-title">Science meets spirituality</h3>
+        <p class="act-desc">How researchers built the evidence base for pollution — and how communities steeped in spiritual tradition reconciled lab results with living faith.</p>
+        <div class="act-voices">
+          <span class="voice-chip">Prof. Luqmon</span>
+          <span class="voice-chip">Osun Priestess</span>
+        </div>
+      </div>
+
+      <div class="act-card" onclick="activateAct(this)">
+        <p class="act-number">Act 3</p>
+        <h3 class="act-title">The media lens</h3>
+        <p class="act-desc">What worked and what didn't in a decade of journalism. Those who lived through the coverage — as subjects, not sources — speak candidly on the record.</p>
+        <div class="act-voices">
+          <span class="voice-chip">Chief Atanda</span>
+          <span class="voice-chip">Chief Elebuibon</span>
+          <span class="voice-chip">Arugba</span>
+        </div>
+      </div>
+
+      <div class="act-card" onclick="activateAct(this)">
+        <p class="act-number">Act 4</p>
+        <h3 class="act-title">Power, politics &amp; protection</h3>
+        <p class="act-desc">Government responses, unintended consequences of bad reporting, and lasting lessons for journalists covering sacred environmental sites globally.</p>
+        <div class="act-voices">
+          <span class="voice-chip">Commissioner Bankole</span>
+          <span class="voice-chip">Chief Elebuibon</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- VOICES -->
+  <section class="voices-section" id="voices">
+
+    <p class="section-eyebrow">Interview subjects</p>
+    <h2 class="section-title">The voices in the film</h2>
+    <p class="section-sub">Six people at the intersection of faith, science, community, and power. Click any card to read their key quote.</p>
+
+    <div class="voices-grid">
+
+      <div class="voice-card" onclick="toggleVoice(this)">
+        <div class="voice-avatar">CE</div>
+        <p class="voice-name">High Chief Elebuibon</p>
+        <p class="voice-role">Cultural custodian · Osogbo</p>
+        <hr class="voice-divider">
+        <p class="voice-quote">"Journalists came. But they didn't always consult the right authorities before reporting."</p>
+      </div>
+
+      <div class="voice-card" onclick="toggleVoice(this)">
+        <div class="voice-avatar">CA</div>
+        <p class="voice-name">Chief Oluseyi Atanda</p>
+        <p class="voice-role">Community leader · Osun State</p>
+        <hr class="voice-divider">
+        <p class="voice-quote">"International coverage created pressure. But it also created dangerous rhetoric that harmed the community."</p>
+      </div>
+
+      <div class="voice-card" onclick="toggleVoice(this)">
+        <div class="voice-avatar">AR</div>
+        <p class="voice-name">Arugba</p>
+        <p class="voice-role">Ritual vessel bearer · Osun Grove</p>
+        <hr class="voice-divider">
+        <p class="voice-quote">"How reporting can honor spiritual traditions while demanding accountability — that is the question journalists must answer."</p>
+      </div>
+
+      <div class="voice-card" onclick="toggleVoice(this)">
+        <div class="voice-avatar">YO</div>
+        <p class="voice-name">Yeye Osun / Priestess</p>
+        <p class="voice-role">River priestess · Osun Sacred Grove</p>
+        <hr class="voice-divider">
+        <p class="voice-quote">"The water has always been sacred. That truth does not change with a laboratory result."</p>
+      </div>
+
+      <div class="voice-card" onclick="toggleVoice(this)">
+        <div class="voice-avatar">PL</div>
+        <p class="voice-name">Prof. Luqmon Adeyemi</p>
+        <p class="voice-role">Chemist · Osun State University</p>
+        <hr class="voice-divider">
+        <p class="voice-quote">"The concentrations of heavy metals we documented were far beyond WHO safe thresholds — and the community was still drinking this water."</p>
+      </div>
+
+      <div class="voice-card" onclick="toggleVoice(this)">
+        <div class="voice-avatar">CB</div>
+        <p class="voice-name">Hon. Bankole</p>
+        <p class="voice-role">Commissioner of Culture &amp; Tourism</p>
+        <hr class="voice-divider">
+        <p class="voice-quote">"Pollution is not only an environmental crisis. It is a tourism crisis, a heritage crisis, and an identity crisis."</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINDINGS -->
+  <section class="findings-section">
+
+    <p class="section-eyebrow">What the film found</p>
+    <h2 class="section-title">A decade of journalism, examined</h2>
+
+    <div class="findings-grid">
+
+      <div class="finding-card">
+        <div class="finding-accent green"></div>
+        <p class="finding-label green">What worked</p>
+        <h3 class="finding-title">Coverage created pressure</h3>
+        <p class="finding-body">International reporting — particularly from BBC and Reuters — succeeded in elevating the story to global attention and placing pressure on government to respond publicly.</p>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-accent gold"></div>
+        <p class="finding-label gold">What failed</p>
+        <h3 class="finding-title">The wrong voices led</h3>
+        <p class="finding-body">Much coverage consulted scientists and officials before community and spiritual leaders — inverting the hierarchy of who carries authority over a sacred site.</p>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-accent grey"></div>
+        <p class="finding-label grey">What was missed</p>
+        <h3 class="finding-title">Rhetoric caused harm</h3>
+        <p class="finding-body">Some reporting's language around the river's danger deterred worshippers from sacred ceremonies — an unintended consequence that no journalist accounted for.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PULL QUOTES -->
+  <section class="quotes-section">
+
+    <p class="quotes-eyebrow">From the closing narration</p>
+    <h2 class="quotes-title">Lessons for journalists</h2>
+
+    <div class="quotes-grid">
+
+      <div class="quote-card">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">Journalism alone can't save a river. But when it centers the right voices, asks the right questions, and holds power truly accountable, it becomes more than documentation. It becomes a tool for justice.</p>
+        <p class="quote-attr">— Babatunde Okunlola, narrator</p>
+      </div>
+
+      <div class="quote-card">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">The Osun River's story isn't over. And neither is the work of telling it right.</p>
+        <p class="quote-attr">— Babatunde Okunlola, closing narration</p>
+      </div>
+
+      <div class="quote-card">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">Around the world, sacred sites face environmental destruction. Communities watch as their heritage is poisoned for profit. And journalists rush in to document it. What can this case teach them?</p>
+        <p class="quote-attr">— Babatunde Okunlola, narrator</p>
+      </div>
+
+      <div class="quote-card">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">A decade of investigative journalism. Dozens of reports. Millions of readers. And the Osun River still flows brown. But this isn't a story of failure — it's a lesson.</p>
+        <p class="quote-attr">— Babatunde Okunlola, narrator</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FILM EMBED -->
+  <section class="film-section" id="watch">
+
+    <p class="film-eyebrow">Watch the documentary</p>
+    <h2 class="film-title">Amplifying Investigative Voices</h2>
+    <p class="film-subtitle">The Osun River · 30 min · Spring 2026</p>
+
+    <div class="film-frame">
+      <!-- Replace VIDEO_ID below with your actual YouTube video ID when ready -->
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Amplifying Investigative Voices: The Osun River"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p class="film-archive">
+      Explore the full evidence archive —
+      <a href="https://sites.google.com/view/saving-the-osun-river-project/home" target="_blank">Saving the Osun River Project</a>
+    </p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <p class="footer-title">Amplifying Investigative Voices: The Osun River</p>
+      <p class="footer-credit">&copy; 2026 Babatunde Okunlola · UNL Hitchcock Fellowship · College of Journalism and Mass Communications</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Cite this film</a>
+      <a href="#">Press kit</a>
+      <a href="#">Contact</a>
+      <a href="https://sites.google.com/view/saving-the-osun-river-project/home" target="_blank">Evidence archive</a>
+    </div>
+  </footer>
+
+
+  <script>
+    // Toggle voice card open/closed
+    function toggleVoice(el) {
+      el.classList.toggle('open');
+    }
+
+    // Switch active act card
+    function activateAct(el) {
+      document.querySelectorAll('.act-card').forEach(function(c) {
+        c.classList.remove('active');
+      });
+      el.classList.add('active');
+    }
+
+    // Highlight active nav tab on click
+    document.querySelectorAll('.nav-tabs a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('.nav-tabs a').forEach(function(l) {
+          l.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
