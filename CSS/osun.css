@@ -444,7 +444,7 @@ nav {
 /********** ACT SECTIONS **********/
 
 .act-section {
-  padding: 4rem 2.5rem 3rem;
+  padding: 5rem 2.5rem 3rem;
   border-top: 1px solid rgba(26, 26, 24, 0.08);
   background-color: #fafaf8;
 }
@@ -870,7 +870,7 @@ footer {
 /********** ANCHOR SCROLL OFFSET **********/
 
 #hero, #act1, #act2, #act3, #act4, #watch {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 160px;
 }
 
 
