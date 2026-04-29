@@ -886,7 +886,7 @@ footer {
 .video-placeholder {
   position: relative;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;
   background-color: #0d2e1f;
   border-radius: 8px;
   overflow: hidden;
